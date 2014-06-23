@@ -33,8 +33,6 @@ import java.util.zip.GZIPInputStream;
 public abstract class JSONHttpClient<T> {
     private final String TAG = getClass().getName();
 
-    protected final String URL = "http://mobileapps.azurewebsites.net/api/HolidayApi/";
-
     @SuppressWarnings("hiding")
     protected <T> T PostObject(final String url, final T object, final Class<T> objectClass) {
         DefaultHttpClient defaultHttpClient = new DefaultHttpClient();
